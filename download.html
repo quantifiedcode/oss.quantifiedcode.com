@@ -1,0 +1,271 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>QuantifiedCode | Download</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="/theme/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body >
+<header>
+  <nav id="navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div id="nav-head" class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="/theme/images/logo.svg" /></a>
+      </div>
+      <div id="menu">
+        <div class="collapse navbar-collapse" id="toggle-menu">
+          <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/features.html">Features</a></li>
+                    <li><a href="/download.html">Download</a></li>
+            <li class="toolbar">
+              </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="main">
+    
+
+        <section id="qcapp" class="static-content">
+            <section class="wrapper benefits vh space-top-20">
+                <section>
+                    <div class="container">
+
+                        <div class="row">
+                              <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+                                  <img class="img-responsive" src="/images/gfx/press/code-visualization.png" />
+                              </div>
+                              <div class="col-sm-12 col-lg-9 col-md-9">
+                                  <h2>Download &amp; Install QuantifiedCode CE</h2>
+                                  <p>
+                                      There are several ways to install QuantifiedCode CE. For most cases we recommend using the <a>Docker image</a>, as it contains everything you need to install and set up QuantifiedCode. In general, we recommend running QuantifiedCode on a <strong>Debian</strong> Linux system, preferrably <strong>Ubuntu (>=14.04)</strong>, though it should be possible to install it on different Linux/Unix flavors or even Windows/MacOS.
+                                  </p>
+
+                                  <h4>Github Repositories</h4>
+
+                                  <p>
+                                      We develop all of our public code on <strong>Github</strong>. QuantifiedCode consists of several individual repositories:
+                                  </p>
+
+                                  <ul class="list-group">
+                                      <li class="list-group-item">
+                                          <a href="https://github.com/quantifiedcode/quantifiedcode.git">QuantifiedCode CE (frontend and backend)</a>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <a href="https://github.com/quantifiedcode/checkmate.git">Checkmate (our code checking tool that powers QuantifiedCode)</a>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <a href="https://github.com/quantifiedcode/quantifiedcode-docker.git">Docker configuration and setup files</a>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <a href="https://github.com/quantifiedcode/quantifiedcode-ansible.git">Ansible configuration and setup files</a>
+                                      </li>
+                                  </ul>
+
+                                  <h4>Installation Options</h4>
+
+                                  <p>
+                                      We know that people have different requirements when running QuantifiedCode CE. This is why we provide several installation options:
+                                  </p>
+
+                                  <table class="table table-striped lead space-top-40 space-bottom-40">
+                                      <tbody>
+                                          <tr>
+                                              <td>
+                                                  <strong><a href="#docker">Docker-Based Installation</a></strong>
+                                              </td>
+                                              <td>
+                                                  Great to get started quickly.
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <strong><a href="#ansible">Ansible-Based Installation</a></strong>
+                                              </td>
+                                              <td>
+                                                  Best fit for more demanding setups.
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <strong><a href="#manual">Manual Installation</a></strong>
+                                              </td>
+                                              <td>
+                                                  Great for testing and development/modification.
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+
+                                  <h4>Getting Help</h4>
+
+                                  <p>
+                                      Currently, QuantifiedCode CE is in beta, and although we do our best it is possible that you will encounter problems when installing or using it. If you do, please feel free to <strong><a href="mailto:andreas@quantifiedcode.com">reach out to us</a></strong>, we will be happy to help you setting up QuantifiedCode CE on your system and we will do our best to answer your questions as fast as possible. We also have a <strong><a href="https://gitter.im/quantifiedcode-ce">Gitter chatroom</a></strong> where you can get help.
+                                  </p>
+
+                                  <h3>Docker-Based Installation <a name="docker" href="#docker">&#9875;</a></h3>
+
+                                  <p>
+                                      We provide a Docker image that contains everything you need to run QuantifiedCode CE, including a frontend server, API server and a running worker daemon. The Docker image is the fastest way to get started and can provide reasonable performance for small to medium instances of QuantifiedCode CE. By default it uses an SQLite database and a Redis-based task scheduler, which can be easily changed to.
+
+                                      <br />
+
+                                      To use this image, simply follow these steps:
+                                  </p>
+
+                                  <div class="panel panel-warning">
+                                      <div class="panel-heading">
+                                          Docker-Based Installation
+                                      </div>
+                                      <div class="panel-body">
+                                          <ol>
+                                              <li>Make sure Docker is installed on your platform.</li>
+                                              <li>Clone the QuantifiedCode <strong>docker</strong> repository from Github (this contains everything you need to get started): <br />
+                                                  <code>
+                                                      git clone https://github.com/quantifiedcode/quantifiedcode-docker.git
+                                                  </code>
+                                              </li>
+                                              <li>
+                                                  Optionally, edit <strong>settings.yml</strong> to your liking (see below for more information about that).
+                                              </li>
+                                              <li>
+                                                  Run the setup script: <br />
+                                                  <code>
+                                                      cd quantifiedcode-docker<br />
+                                                      ./run-quantifiedcode.sh
+                                                  </code>
+                                              </li>
+                                              <li>
+                                                  QuantifiedCode should now be running and accessible on your local interface on port <strong>5000</strong>.
+                                              </li>
+                                          </ol>
+                                      </div>
+                                  </div>
+
+                                  <h3>Ansible-Based Installation <a name="ansible" href="#ansible">&#9875;</a></h3>
+
+                                  <p>
+                                      Alternatively, you can also install QuantifiedCode using Ansible. We have prepared an <strong>Ansible</strong> script for you that can set up (and update) QuantifiedCode CE on any server (or number of servers) of your choice. To use this script, simply follow these instructions:
+                                  </p>
+
+                                  <div class="panel panel-warning">
+                                      <div class="panel-heading">
+                                          Ansible-Based Installation
+                                      </div>
+                                      <div class="panel-body">
+                                          <ol>
+                                              <li>Make sure Ansible is installed on your platform, e.g. via <strong>pip</strong>.
+                                                  <code>
+                                                      sudo pip install ansible
+                                                  </code>
+                                              </li>
+                                              <li>Clone the QuantifiedCode <strong>Ansible</strong> repository from Github (this contains everything you need to get started): <br />
+                                                  <code>
+                                                      git clone https://github.com/quantifiedcode/quantifiedcode-ansible.git
+                                                  </code>
+                                              </li>
+                                              <li>
+                                                  Edit the inventory files in the <strong>inventory</strong> folder (instructions are available in the files).
+                                              </li>
+                                              <li>
+                                                  Edit the variables files in the <strong>variables</strong> folder (instructions are available in the files).
+                                              </li>
+                                              <li>
+                                                  Run the QuantifiedCode playbook: <br />
+                                                  <code>
+                                                      #to deploy to your production system <br />
+                                                      ansibe-playbook quantifiedcode.yml -i inventory/production --ask-sudo-pass <br /><br />
+                                                      #to deploy to your local machine <br />
+                                                      ansible-playbook quantifiedcode.yml -i inventory/local --ask-sudo-pass <br />
+                                                  </code>
+                                              </li>
+                                          </ol>
+                                      </div>
+                                  </div>
+
+                                  <p>
+                                      Apart from a playbook for installing QuantifiedCode CE, the repository also contains playbooks that help you with many maintenance tasks, such as performing backups, upgrades or cleanup operations. Please refer to the <a href="#">documentation</a> for more details and make sure to always pull the latest version of the Ansible repository in order to get the latest setup scripts.
+                                  </p>
+
+                                  <h3>Manual Installation <a name="manual" href="#manual">&#9875;</a></h3>
+
+                                  <p>
+                                      Finally, you can install QuantifiedCode completely manually, which is useful when experimenting with it, or when developing plugins and extensions. To set up a working environment for QuantifiedCode CE, you will need the following external dependencies:
+                                  </p>
+
+                                  <ul class="list-group">
+                                      <li class="list-group-item">A database instance that QuantifiedCode can connect to.<br />We recommend <strong>PosgreSQL >= 9.5</strong>.</li>
+                                      <li class="list-group-item">A Celery instance that QuantifiedCode can connect to. <br />We recommend <strong>Celery >= 4.0 with a RabbitMQ backend</strong>.</li>
+                                  </ul>
+
+                                  <p>
+                                      After installing these, you can install QuantifiedCode CE by following these instructions:
+                                  </p>
+
+                                  <div class="panel panel-warning">
+                                      <div class="panel-heading">
+                                          Manual Installation
+                                      </div>
+                                      <div class="panel-body">
+                                          <ol>
+                                              <li>Make sure Python (2.7) and pip are installed on your platform.</li>
+                                              <li>Clone the QuantifiedCode repository from Github (and make sure that it is in your Python path): <br />
+                                                  <code>
+                                                      git clone https://github.com/quantifiedcode/quantifiedcode.git
+                                                  </code>
+                                              </li>
+                                              <li>
+                                                  Install the dependencies:
+                                                  <code>
+                                                      #optionally, create a virtual environment<br />
+                                                      virtualenv venv<br /><br />
+
+                                                      pip install -r requirements.txt
+                                                  </code>
+                                              </li>
+                                              <li>
+                                                  Run the setup script (which will help you to set up your database and Celery connections):<br />
+                                                  <code>
+                                                      python manage.py setup
+                                                  </code>
+                                              </li>
+                                              <li>
+                                                  Run all services (API, frontend and workers): <br />
+                                                  <code>
+                                                      python manage.py runall
+                                                  </code>
+                                              </li>
+                                          </ol>
+                                      </div>
+                                  </div>
+
+                              </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+
+    
+</div>
+
+<script src="/theme/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="/theme/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

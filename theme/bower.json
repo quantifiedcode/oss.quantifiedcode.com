@@ -1,0 +1,21 @@
+{
+  "name": "quantifiedcode",
+  "version": "0.1",
+  "authors": [
+    "Andreas Dewes <andreas.dewes@QuantifiedCode.com>"
+  ],
+  "description": "our static website theme",
+  "license": "MIT",
+  "homepage": "https://oss.quantifiedcode.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "latest"
+  }
+}

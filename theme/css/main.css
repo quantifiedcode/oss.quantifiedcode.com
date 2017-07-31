@@ -1706,8 +1706,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 #main {
-  min-height: 640px;
-  margin-top: 30px; }
+  min-height: 640px; }
 
 h1.headline {
   font-size: 30px !important;
@@ -3995,6 +3994,12 @@ section.team {
     .how-it-works section.white-slide li {
       color: #eeeeee;
       line-height: 1.7; }
+    .how-it-works section.black-slide p.alert,
+    .how-it-works section.white-slide p.alert {
+      color: #000; }
+    .how-it-works section.black-slide p.alert a,
+    .how-it-works section.white-slide p.alert a {
+      color: #555555; }
     .how-it-works section.black-slide .screenshot,
     .how-it-works section.white-slide .screenshot {
       background: #fff;

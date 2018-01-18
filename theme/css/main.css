@@ -5615,7 +5615,7 @@ h1 a:hover {
     width: 50%; }
   .project-header .tabs li:first-child:nth-last-child(3),
   .project-header .tabs li:first-child:nth-last-child(3) ~ li {
-    width: 33.33333%; }
+    width: 33.3333333333%; }
   .project-header .tabs li:first-child:nth-last-child(4),
   .project-header .tabs li:first-child:nth-last-child(4) ~ li {
     width: 25%; }
@@ -5624,7 +5624,7 @@ h1 a:hover {
     width: 20%; }
   .project-header .tabs li:first-child:nth-last-child(6),
   .project-header .tabs li:first-child:nth-last-child(6) ~ li {
-    width: 16.66667%; }
+    width: 16.6666666667%; }
 
   .pil .issue-list {
     margin-left: 0px; }
